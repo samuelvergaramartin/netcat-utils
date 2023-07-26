@@ -1,4 +1,4 @@
-const NetCatIntentsdata = import('../Build/IntentsBuilder');
+const NetCatIntentsdata = import('../Build/IntentsBuilder.js');
 
 NetCatIntentsdata.then(PromiseResolve => {
     const NetCatIntents = {
