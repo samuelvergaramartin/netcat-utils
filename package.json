@@ -1,8 +1,8 @@
 {
   "name": "netcat-utils",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "NPM de apoyo con varias herramientas y utilidades que te ayudarán a programar y crear tus proyectos.",
-  "main": "index.js",
+  "main": "index.cjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
