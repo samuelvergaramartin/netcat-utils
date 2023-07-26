@@ -1,0 +1,15 @@
+{
+  "name": "netcat-utils",
+  "version": "0.0.1",
+  "description": "NPM de apoyo con varias herramientas y utilidades que te ayudarán a programar y crear tus proyectos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": ["utilidades", "utils", "netcat", "samuelvergaramartin",
+"proyectos", "discord", "Discord", "JavaScript", "TypeScript", "herramientas",
+"Herramientas", "Proyectos", "Proyects", "proyects", "Proyect", "proyect"],
+  "author": "samuelvergaramartin",
+  "license": "ISC"
+}
