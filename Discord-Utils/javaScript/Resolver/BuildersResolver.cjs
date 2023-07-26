@@ -1,4 +1,4 @@
-const NetCatIntentsdata = require('../Build/IntentsBuilder');
+const NetCatIntentsdata = import('../Build/IntentsBuilder');
 
 const NetCatIntents = {
     GUILDS: NetCatIntentsdata.default.GUILDS,
