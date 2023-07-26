@@ -1,25 +1,27 @@
 const NetCatIntentsdata = import('../Build/IntentsBuilder');
 
-const NetCatIntents = {
-    GUILDS: NetCatIntentsdata.default.GUILDS,
-    GUILD_MEMBERS: NetCatIntentsdata.default.GUILD_MEMBERS,
-    GUILD_MODERATION: NetCatIntentsdata.default.GUILD_MODERATION,
-    GUILD_EMOJIS_AND_STICKERS: NetCatIntentsdata.default.GUILD_EMOJIS_AND_STICKERS,
-    GUILD_INTEGRATIONS: NetCatIntentsdata.default.GUILD_INTEGRATIONS,
-    GUILD_WEBHOOKS: NetCatIntentsdata.default.GUILD_WEBHOOKS,
-    GUILD_INVITES: NetCatIntentsdata.default.GUILD_INVITES,
-    GUILD_VOICE_STATES: NetCatIntentsdata.default.GUILD_VOICE_STATES,
-    GUILD_PRESENCES: NetCatIntentsdata.default.GUILD_PRESENCES,
-    GUILD_MESSAGES: NetCatIntentsdata.default.GUILD_MESSAGES,
-    GUILD_MESSAGE_REACTIONS: NetCatIntentsdata.default.GUILD_MESSAGE_REACTIONS,
-    GUILD_MESSAGE_TYPING: NetCatIntentsdata.default.GUILD_MESSAGE_TYPING,
-    DIRECT_MESSAGES: NetCatIntentsdata.default.DIRECT_MESSAGES,
-    DIRECT_MESSAGE_REACTIONS: NetCatIntentsdata.default.DIRECT_MESSAGE_REACTIONS,
-    DIRECT_MESSAGE_TYPING: NetCatIntentsdata.default.DIRECT_MESSAGE_TYPING,
-    MESSAGE_CONTENT: NetCatIntentsdata.default.MESSAGE_CONTENT,
-    GUILD_SCHEDULED_EVENTS: NetCatIntentsdata.default.GUILD_SCHEDULED_EVENTS,
-    AUTO_MODERATION_CONFIGURATION: NetCatIntentsdata.default.AUTO_MODERATION_CONFIGURATION,
-    AUTO_MODERATION_EXECUTION: NetCatIntentsdata.default.AUTO_MODERATION_EXECUTION
+NetCatIntentsdata.then(PromiseResolve => {
+    const NetCatIntents = {
+    GUILDS: PromiseResolve.default.GUILDS,
+    GUILD_MEMBERS: PromiseResolve.default.GUILD_MEMBERS,
+    GUILD_MODERATION: PromiseResolve.default.GUILD_MODERATION,
+    GUILD_EMOJIS_AND_STICKERS: PromiseResolve.default.GUILD_EMOJIS_AND_STICKERS,
+    GUILD_INTEGRATIONS: PromiseResolve.default.GUILD_INTEGRATIONS,
+    GUILD_WEBHOOKS: PromiseResolve.default.GUILD_WEBHOOKS,
+    GUILD_INVITES: PromiseResolve.default.GUILD_INVITES,
+    GUILD_VOICE_STATES: PromiseResolve.default.GUILD_VOICE_STATES,
+    GUILD_PRESENCES: PromiseResolve.default.GUILD_PRESENCES,
+    GUILD_MESSAGES: PromiseResolve.default.GUILD_MESSAGES,
+    GUILD_MESSAGE_REACTIONS: PromiseResolve.default.GUILD_MESSAGE_REACTIONS,
+    GUILD_MESSAGE_TYPING: PromiseResolve.default.GUILD_MESSAGE_TYPING,
+    DIRECT_MESSAGES: PromiseResolve.default.DIRECT_MESSAGES,
+    DIRECT_MESSAGE_REACTIONS: PromiseResolve.default.DIRECT_MESSAGE_REACTIONS,
+    DIRECT_MESSAGE_TYPING: PromiseResolve.default.DIRECT_MESSAGE_TYPING,
+    MESSAGE_CONTENT: PromiseResolve.default.MESSAGE_CONTENT,
+    GUILD_SCHEDULED_EVENTS: PromiseResolve.default.GUILD_SCHEDULED_EVENTS,
+    AUTO_MODERATION_CONFIGURATION: PromiseResolve.default.AUTO_MODERATION_CONFIGURATION,
+    AUTO_MODERATION_EXECUTION: PromiseResolve.default.AUTO_MODERATION_EXECUTION
 }
 
 module.exports = NetCatIntents;
+})
