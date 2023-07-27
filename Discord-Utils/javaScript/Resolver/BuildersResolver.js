@@ -1,4 +1,12 @@
-import NetCatIntentsdata from '../Build/IntentsBuilder.mjs';
+const NetCatIntentsdata = require('../Build/IntentsBuilder.mjs');
+
+const NetCatIntents = NetCatIntentsdata.default;
+
+module.exports = NetCatIntents;
+
+/*import NetCatIntentsdata from '../Build/IntentsBuilder.mjs';
+
+
 module.exports = {
     NetCatIntents:  {
     
@@ -26,4 +34,4 @@ module.exports = {
 
         
     }
-}
+}*/
