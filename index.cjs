@@ -1,1 +1,1 @@
-module.NetCatIntents  = require('./Discord-Utils/javaScript/Resolver/BuildersResolver.cjs');
+module.NetCatIntents  = require('./Discord-Utils/javaScript/Resolver/BuildersResolver.js');
