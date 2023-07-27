@@ -1,4 +1,4 @@
-import NetCatIntentsdata from '../Build/IntentsBuilder.js';
+import NetCatIntentsdata from '../Build/IntentsBuilder.mjs';
 module.exports = {
     NetCatIntents:  {
     
