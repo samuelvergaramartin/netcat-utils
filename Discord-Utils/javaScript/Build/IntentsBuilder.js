@@ -28,4 +28,4 @@ const NetCatIntents = {
    * @default - Exportación por defecto.
    */
 
-export default NetCatIntents;
+module.exports = NetCatIntents;
