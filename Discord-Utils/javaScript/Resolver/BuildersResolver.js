@@ -1,8 +1,9 @@
-const NetCatIntentsdata = require('../Build/IntentsBuilder.mjs');
+const NetCatIntentsdata = import('../Build/IntentsBuilder.mjs');
 
-const NetCatIntents = NetCatIntentsdata.default;
-
-module.exports = NetCatIntents;
+NetCatIntentsdata.then(PromiseResolve => {
+    const NetCatIntents = PromiseResolve.default;
+    module.exports = NetCatIntents;
+})
 
 /*import NetCatIntentsdata from '../Build/IntentsBuilder.mjs';
 
