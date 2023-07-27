@@ -1,0 +1,1 @@
+exports.NetCatIntents = require('./Discord-Utils/javaScript/Resolver/BuildersResolver');
