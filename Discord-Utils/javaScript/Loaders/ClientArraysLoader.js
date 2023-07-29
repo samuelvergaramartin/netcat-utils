@@ -40,8 +40,8 @@ const NetCatArraysLoader = {
             for (let i = 0; i < 18; i++) {
                 let element = tempArray[i];
                 if (element !== null) {
-                  if (!(typeof element === 'number' && isFinite(element))) {
-                    throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadIntents() no es un número");
+                  if (isNaN(element) || typeof element !== 'number') {
+                    throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadIntents() no es un número válido");
                   }
                   NetCatIntentsArray.push(element);
                 }
