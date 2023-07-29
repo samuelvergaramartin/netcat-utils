@@ -29,18 +29,18 @@ const NetCatArraysLoader = {
             tempArray.push(Intent18);
             tempArray.push(Intent19);
 
-            const AllelementsAreBigInt = tempArray.every((element) => typeof element === 'bigint');
+            const AllelementsAreBigInt = tempArray.every((element) => typeof element === 'number');
 
             const AllelementsAreNull = tempArray.every((element) => element == null); 
             
             if(AllelementsAreNull) throw new Error("ERROR: Todos los valores introducidos en el NetCatArraysLoader.loadIntents() son nulos");
 
-            if(!AllelementsAreBigInt) throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadIntents() no es un BigInt");
+            if(!AllelementsAreBigInt) throw new Error("ERROR: Todos los valores introducidos en el NetCatArraysLoader.loadIntents() no son number");
 
             for(let i = 0; i < 18; i++) {
                 let element = tempArray[i];
                 if(element !== null) {
-                    if(typeof element !== 'bigint') throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadIntents() no es un BigInt");
+                    if(typeof element !== 'number') throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadIntents() no es un number");
                     NetCatIntentsArray.push(element);
                 }
             }
