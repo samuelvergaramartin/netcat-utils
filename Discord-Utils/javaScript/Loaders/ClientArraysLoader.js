@@ -37,13 +37,22 @@ const NetCatArraysLoader = {
 
             //if(!AllelementsAreNumber) throw new Error("ERROR: Todos los valores introducidos en el NetCatArraysLoader.loadIntents() no son number");
 
-            for(let i = 0; i < 18; i++) {
+            for (let i = 0; i < 18; i++) {
+                let element = tempArray[i];
+                if (element !== null) {
+                  if (!(typeof element === 'number' && isFinite(element))) {
+                    throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadIntents() no es un número");
+                  }
+                  NetCatIntentsArray.push(element);
+                }
+              }
+            /*for(let i = 0; i < 18; i++) {
                 let element = tempArray[i];
                 if(element !== null) {
                     if(typeof element !== 'number') throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadIntents() no es un number");
                     NetCatIntentsArray.push(element);
                 }
-            }
+            }*/
     }
 }
 
