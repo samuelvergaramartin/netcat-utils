@@ -38,7 +38,13 @@ const NetCatArraysLoader = {
             if(!AllelementsAreBigInt) throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadIntents() no es un BigInt");
 
             for(let i = 0; i < 18; i++) {
-                
+                let element = tempArray[i];
+                if(element !== null) {
+                    if(typeof element !== 'bigint') throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadIntents() no es un BigInt");
+                    NetCatIntentsArray.push(element);
+                }
             }
     }
 }
+
+module.exports = NetCatArraysLoader;
