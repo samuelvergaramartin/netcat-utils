@@ -47,5 +47,7 @@ const NetCatArraysLoader = {
     }
 }
 
-module.exports = NetCatArraysLoader;
-module.exports = NetCatIntentsArray;
+module.exports = {
+    NetCatArraysLoader,
+    NetCatIntentsArray
+};
