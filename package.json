@@ -1,6 +1,6 @@
 {
   "name": "netcat-utils",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "NPM de apoyo con varias herramientas y utilidades que te ayudarán a programar y crear tus proyectos.",
   "main": "index.js",
   "scripts": {
