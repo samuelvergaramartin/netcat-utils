@@ -48,6 +48,6 @@ const NetCatArraysLoader = {
 }
 
 module.exports = {
-    NetCatArraysLoader,
-    NetCatIntentsArray
-};
+    NetCatArraysLoader: NetCatArraysLoader,
+    NetCatIntentsArray: NetCatIntentsArray
+}
