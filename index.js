@@ -11,3 +11,4 @@ exports.NetCatMentionsAll = require('./Discord-Utils/javaScript/data/AllMentions
 const clientArraysLoader = require('./Discord-Utils/javaScript/Loaders/ClientArraysLoader');
 exports.NetCatArraysLoader = clientArraysLoader.NetCatArraysLoader;
 exports.NetCatIntentsArray = clientArraysLoader.NetCatIntentsArray;
+exports.NetCatPartialsArray = clientArraysLoader.NetCatPartialsArray;
