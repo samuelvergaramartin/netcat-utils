@@ -1,4 +1,6 @@
 const NetCatIntentsArray = [];
+const NetCatPartialsArray = [];
+const NetCatMentionsArray = [];
 
 const NetCatArraysLoader = {
     name: "NetCatLoader",
@@ -46,10 +48,41 @@ const NetCatArraysLoader = {
                   NetCatIntentsArray.push(element);
                 }
               }
-    }
+    },
+    loadPartials: async(Partial1, Partial2, Partial3, Partial4, Partial5,
+      Partial6, Partial7) => {
+        const tempArray = [];
+
+        tempArray.push(Partial1);
+        tempArray.push(Partial2);
+        tempArray.push(Partial3);
+        tempArray.push(Partial4);
+        tempArray.push(Partial5);
+        tempArray.push(Partial6);
+        tempArray.push(Partial7);
+
+        const AllelementsAreNull = tempArray.every((element) => element == null); 
+            
+        if(AllelementsAreNull) throw new Error("ERROR: Todos los valores introducidos en el NetCatArraysLoader.loadPartials() son nulos");
+
+        const AllelementsAreUndefined = tempArray.every((element) => element == undefined);
+
+        if(AllelementsAreUndefined) throw new Error("ERROR: No se ha introducido ningún valor en NeCatArraysLoader.loadPartials() o todos los valores introducidos son undefined");
+
+        for (let i = 0; i < 6; i++) {
+          let element = tempArray[i];
+          if (element !== undefined) {
+            if (isNaN(element) || typeof element !== 'number') {
+              throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadPartials() no es un número válido");
+            }
+            NetCatPartialsArray.push(element);
+          }
+        }
+      }
 }
 
 module.exports = {
     NetCatArraysLoader: NetCatArraysLoader,
-    NetCatIntentsArray: NetCatIntentsArray
+    NetCatIntentsArray: NetCatIntentsArray,
+    NetCatPartialsArray: NetCatPartialsArray
 }
