@@ -12,3 +12,4 @@ const clientArraysLoader = require('./Discord-Utils/javaScript/Loaders/ClientArr
 exports.NetCatArraysLoader = clientArraysLoader.NetCatArraysLoader;
 exports.NetCatIntentsArray = clientArraysLoader.NetCatIntentsArray;
 exports.NetCatPartialsArray = clientArraysLoader.NetCatPartialsArray;
+exports.NetCatMentionsArray = clientArraysLoader.NetCatMentionsArray;
