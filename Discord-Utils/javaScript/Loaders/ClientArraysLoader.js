@@ -78,11 +78,37 @@ const NetCatArraysLoader = {
             NetCatPartialsArray.push(element);
           }
         }
+      },
+      loadMentions: async(Mention1, Mention2, Mention3) => {
+        const tempArray = [];
+
+        tempArray.push(Mention1);
+        tempArray.push(Mention2);
+        tempArray.push(Mention3);
+
+        const AllelementsAreNull = tempArray.every((element) => element == null); 
+            
+        if(AllelementsAreNull) throw new Error("ERROR: Todos los valores introducidos en el NetCatArraysLoader.loadMentions() son nulos");
+
+        const AllelementsAreUndefined = tempArray.every((element) => element == undefined);
+
+        if(AllelementsAreUndefined) throw new Error("ERROR: No se ha introducido ningún valor en NeCatArraysLoader.loadMentions() o todos los valores introducidos son undefined");
+
+        for (let i = 0; i < 2; i++) {
+          let element = tempArray[i];
+          if (element !== undefined) {
+            if (typeof element !== 'string') {
+              throw new Error("ERROR: Uno o más de los valores introducidos en el NetCatArraysLoader.loadMentions() no es un string");
+            }
+            NetCatMentionsArray.push(element);
+          }
+        }
       }
 }
 
 module.exports = {
     NetCatArraysLoader: NetCatArraysLoader,
     NetCatIntentsArray: NetCatIntentsArray,
-    NetCatPartialsArray: NetCatPartialsArray
+    NetCatPartialsArray: NetCatPartialsArray,
+    NetCatMentionsArray: NetCatMentionsArray
 }
