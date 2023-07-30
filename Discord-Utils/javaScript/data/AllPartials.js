@@ -7,7 +7,7 @@ NetCatPartialsAll.push(NetCatPartials.GuildMember);
 NetCatPartialsAll.push(NetCatPartials.GuildScheduledEvent);
 NetCatPartialsAll.push(NetCatPartials.Message);
 NetCatPartialsAll.push(NetCatPartials.Reaction);
-NetCatPartials.push(NetCatPartials.ThreadMember);
-NetCatPartials.push(NetCatPartials.User);
+NetCatPartialsAll.push(NetCatPartials.ThreadMember);
+NetCatPartialsAll.push(NetCatPartials.User);
 
 module.exports = NetCatPartialsAll;
