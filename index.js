@@ -13,3 +13,5 @@ exports.NetCatArraysLoader = clientArraysLoader.NetCatArraysLoader;
 exports.NetCatIntentsArray = clientArraysLoader.NetCatIntentsArray;
 exports.NetCatPartialsArray = clientArraysLoader.NetCatPartialsArray;
 exports.NetCatMentionsArray = clientArraysLoader.NetCatMentionsArray;
+
+exports.NetCatMessageEmbedBuilder = require("./Discord-Utils/javaScript/Exports/NetCatMessageEmbedBuilder");
