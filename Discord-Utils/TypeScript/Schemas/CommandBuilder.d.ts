@@ -28,6 +28,7 @@ interface CommandBuilderSchema {
                 guild_announcement: number,
                 announcement_thread: number,
                 public_thread: number,
+                private_thread: number
                 guild_stage_voice: number,
                 guild_directory: number,
                 guild_forum: number
