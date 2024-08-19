@@ -15,3 +15,4 @@ exports.NetCatPartialsArray = clientArraysLoader.NetCatPartialsArray;
 exports.NetCatMentionsArray = clientArraysLoader.NetCatMentionsArray;
 
 exports.NetCatMessageEmbedBuilder = require("./Discord-Utils/javaScript/Exports/NetCatMessageEmbedBuilder");
+exports.sleep = require("./Coding-Utils/Functions/Sleep");
